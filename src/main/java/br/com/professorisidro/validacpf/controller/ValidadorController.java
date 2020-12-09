@@ -8,8 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.professorisidro.validacpf.service.Validador;
 
 @RestController
-@CrossOrigin("*")
+//@CrossOrigin("*")
+
+
 public class ValidadorController {
+	
+	@GetMapping("/")
+	
+	public String index() {
+		return "{\"mensagem\": \"Bem-Vindo à API\"}";
+	}
 	
 	@GetMapping("/validacpf")
 	public String validaCPF(@RequestParam String cpf) {
