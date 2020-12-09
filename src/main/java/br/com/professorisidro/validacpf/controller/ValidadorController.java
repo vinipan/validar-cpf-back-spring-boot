@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.professorisidro.validacpf.service.Validador;
 
 @RestController
-//@CrossOrigin("*")
+@CrossOrigin("*")
 
 
 public class ValidadorController {
